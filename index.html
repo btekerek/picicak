@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="start-screen">
+        <h1>Welcome to Boop! Configure the settings to play:</h1>
+        <div id="form-container">
+            <form>
+                <label for="player1">Player 1:</label>
+                <input type="text" id="player1" name="player1" /><br />
+
+                <label for="player2">Player 2:</label>
+                <input type="text" id="player2" name="player2" /><br />
+
+                <label for="points-to-win">Points to win:</label>
+                <input type="number" id="points-to-win" name="points-to-win" /><br />
+
+                <label for="board-dimensions">Board dimensions:</label>
+                <input type="number" id="board-dimensions" name="board-dimensions" /><br />
+
+                <label for="number-of-kittens">Number of kittens per player:</label>
+                <input type="number" id="number-of-kittens" name="number-of-kittens" /><br />
+
+                <button type="submit" id="start-game-btn">Start game</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="prompt">
+            <button id="restart-game-btn">Restart</button>
+            <p><b> Player 2:</b> <span id="yellow-name"></span> </p>
+            <p> <b> Score: </b> <span id="yellow-score">0</span> </p>
+            <h1> Black Kittens Start The Game</h1>
+            <p> <b> Player1:</b> <span id="black-name"></span> </p>
+            <p><b> Score:</b> <span id="black-score">0</span> </p>
+        </div>
+
+        <div id="game-board">
+            <div id="black-bench" class="bench"></div>
+            <div id="table"></div>
+            <div id="yellow-bench" class="bench"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
